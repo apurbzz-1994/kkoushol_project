@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The Story of Keywords</title>
+    <script src="p5.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+  <style> body {text-align: center; margin-left: 200px; margin-right: 200px; font-family: sans-serif;}ul{text-align: left;}h2{color: grey;}</style>
+
+    
+  </head>
+  <body>
+    <h2>"The Story of Keywords"</h2>
+    <h4>A primer data parsing and visualization experiment</h4>
+    <h4>Kolpokoushol, Summer 2016</h4>
+    <hr>
+    <br>
+    <br>
+    <br>
+  
+    <h3>Concept</h3>
+    <p>If there is one thing we will be taking with us from this workshop, it's this - We have such an immense quantity of information at our disposal that we can verify ourselves what we should believe in and what we shouldn't, rather than blindly believing in the society. In this small experiment, we have analysed data from a newspaper (Dhaka Tribune), and tried to verify a bunch of hypothesis. In another words, this is "News about news"!</p>
+    <br>
+    <br>
+    
+    <h3>Technical Aspects</h3>
+    <p>We parsed the data that was provided to us by Kolpokoushol (Thanks Saquib bhai and Mishuk bhai!) using the Python programming language. Parsing is a process that involves extracting certain information from a labyrinth of encoded text. The information was mainly keywords associated each news. Afterwards, we made a couple of visualisations via various means.</p>
+    <br>
+    <br>
+ 
+    <h3>Process</h3>
+
+    <p>We started with JSON data to begin with. What a mess!</p>
+    <img src="messy_json.PNG">
+    <br>
+    <p>We used the code below to extract keywords from each news, and then find how many times each keywords occur</p>
+    <img src="code_keyword_freq.PNG">
+    <br>
+    <p>The result after parsing:</p>
+    <img src="keyword_freq_result.PNG">
+    <br>
+    <p>In some cases, we had to find the frequecny of a certain keyword. For example,
+    the code below yields the number of times "chittagong" occurs in the first 4000 news.</p>
+    <img src="sp_word.PNG">
+    <br>
+    <p>Finally, we wrote a code that returns all keywords with frequency greater than a threshold.</p>
+    <img src="code_freq_filter.PNG">
+    
+    <h3>Results</h3>
+    <div><img src="CS.JPG"></div>
+    <div><img src="w_cloud.PNG"></div>
+    <div><img src="CS2.JPG"></div>
+    <div><img src="CS3.PNG"></div>
+    <div><img src="CS5.PNG"></div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Future Plans:</h3>
+    <ul>
+      <li>Make the visualizations interactive, possibly using frameworks like D3.JS</li>
+      <li>Create simple tools/webapps that allow users to search stuff</li>
+      <li>Will be exploring abstract concepts: How do we visualize the data
+      as a manifestation in the real world, rathar than a virtual entity?
+      </li>
+    </ul>
+    <hr>
+
+
+    
+  
+  </body>
+</html>
